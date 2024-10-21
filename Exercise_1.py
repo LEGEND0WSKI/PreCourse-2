@@ -1,3 +1,8 @@
+# // Time Complexity : O(log(n))  Binary search halves the search in every iteration
+# // Space Complexity : O(1) does not  require any extra space proportional to input size
+# // Did this code successfully run on Leetcode :NA
+# // Any problem you faced while coding this :No
+
 # Python code to implement iterative Binary  
 # Search. 
   

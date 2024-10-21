@@ -1,3 +1,7 @@
+# // Time Complexity : O(nlog(n)) mergeSort uses recursion but merge only takes O(n)
+# // Space Complexity : O(n) since every sub array takes up additional space
+# // Did this code successfully run on Leetcode :NA
+# // Any problem you faced while coding this : No
 # Python program for implementation of MergeSort 
 def mergeSort(arr):
   
@@ -11,8 +15,8 @@ def mergeSort(arr):
     mergeSort(r_arr)
    
   #  merge
-    i = j = k = 0 #l-arrindex, r-arrindex, merge-arrindex
-
+    i = j = k = 0                             #l-arrindex, r-arrindex, merge-arrindex
+    # while loop to compare and 2 to fill subarrays
     while i < len(l_arr) and j < len(r_arr):  # comparison and swap
         if l_arr[i] < r_arr[j]:
           arr[k] = l_arr[i]
@@ -35,7 +39,7 @@ def mergeSort(arr):
 # Code to print the list 
 def printList(arr): 
     print(arr)
-  #write your code here
+
   
 
 # driver code to test the above code 

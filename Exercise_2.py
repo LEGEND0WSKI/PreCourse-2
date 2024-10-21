@@ -1,5 +1,12 @@
+# // Time Complexity : O(nlog(n)) best case(equal diviision) and O(n^2) worst case in unbalanced partitions(pivot = extremes)
+# // Space Complexity : O(log(n)) due to all recusive calls
+# // Did this code successfully run on Leetcode :NA
+# // Any problem you faced while coding this :Faced an issue for base case since pivot can be anything.
+# Found out solution in quicksort function.
+
+
 # Python program for implementation of Quicksort Sort 
-#   O(nlog(n)) Time complexity
+
 # give you explanation for the approach
 def partition(arr,low,high):                    
     #write your code here
@@ -39,6 +46,6 @@ n = len(arr)
 quickSort(arr,0,n-1) 
 print ("Sorted array is:") 
 for i in range(n): 
-    print ("%d" %arr[i], end = " "), 
+    print ("%d" %arr[i])
   
  

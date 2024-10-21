@@ -1,4 +1,7 @@
-# Python program for implementation of Quicksort
+# // Time Complexity : O(nlog(n)) for division and O(n^2) worst case for extreme pivots.
+# // Space Complexity : O(log(n)) space logarithmc due to stack
+# // Did this code successfully run on Leetcode :NA
+# // Any problem you faced while coding this : No.
 
 # This function is same in both iterative and recursive
 def partition(arr, l, h):
@@ -28,14 +31,14 @@ def quickSortIterative(arr, l, h):
   stack.append((0, len(arr) - 1))
 
   while stack:
-      l,h = stack.pop() 
+      l,h = stack.pop()                      # unpack tuple size for every array ex-(0,4)
 
-      if h <= l:    #check if subarray has only one/zero elements
-          continue  #done
+      if h <= l:                             # check if subarray has only one/zero elements
+          continue                           # done
 
       p = partition(arr, l, h)
-      stack.append((l, p - 1))
-      stack.append((p + 1, h))
+      stack.append((l, p - 1))              # left subarray
+      stack.append((p + 1, h))              # right subarray
 
 
 arr = [10, 7, 8, 9, 1, 5, 11, 21312, 122, 214, 2, 333] 
@@ -43,5 +46,5 @@ n = len(arr)
 quickSortIterative(arr,0,n-1) 
 print ("Sorted array is:") 
 for i in range(n): 
-    print ("%d" %arr[i], end = " "), 
+    print ("%d" %arr[i], end = " ")
   

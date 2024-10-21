@@ -1,3 +1,7 @@
+# // Time Complexity : O(n) printMiddle iterates
+# // Space Complexity : O(1) only 2 pointes to take up space
+# // Did this code successfully run on Leetcode :NA
+# // Any problem you faced while coding this : Kept failing with bruteforce found this out.
 # Node class  
 class Node:  
   
@@ -32,6 +36,8 @@ class LinkedList:
             slow = slow.next            #moves at 1x speed
             fast = fast.next.next       #moves at 2x speed
         print(slow.data)
+
+
 
 # Driver code 
 list1 = LinkedList() 
